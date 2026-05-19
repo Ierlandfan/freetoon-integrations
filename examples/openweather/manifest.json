@@ -1,0 +1,20 @@
+{
+  "id": "openweather",
+  "name": "OpenWeather",
+  "version": "1.0.0",
+  "binary": "openweather",
+  "args": [],
+  "service_id": "openWeather",
+  "config_file": "openweather.conf",
+  "tile": {
+    "title": "Weather",
+    "color": "0x66bbdd",
+    "icon": "cloud",
+    "value_field": "temp_c",
+    "value_unit": "C",
+    "subtitle_field": "description",
+    "subtitle_unit": ""
+  },
+  "description": "Polls openweathermap.org every 10 minutes (C binary that shells out to curl for the HTTP call). Publishes current temp + humidity + short description. Demonstrates an API-driven integration with a per-install API-key config file.",
+  "license": "MIT"
+}

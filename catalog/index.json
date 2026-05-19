@@ -15,6 +15,21 @@
         "icon": "sun",
         "service": "solarProduction"
       }
+    },
+    {
+      "id": "openweather",
+      "name": "OpenWeather",
+      "description": "API-driven C template — polls openweathermap.org every 10 min via curl, publishes temp + humidity + description. Demonstrates an external-API integration with a per-install config file (API key).",
+      "author": "freetoon team",
+      "version": "1.0.0",
+      "url": "https://github.com/Ierlandfan/freetoon-integrations/raw/main/examples/openweather/openweather.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/Ierlandfan/freetoon-integrations/main/examples/openweather/manifest.json",
+      "tile": {
+        "title": "Weather",
+        "color": "0x66bbdd",
+        "icon": "cloud",
+        "service": "openWeather"
+      }
     }
   ]
 }

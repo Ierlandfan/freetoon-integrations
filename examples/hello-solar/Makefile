@@ -22,9 +22,9 @@ $(OUT): hello-solar.c
 
 # Package for the marketplace tarball — binary + manifest + README.
 tarball: $(OUT)
-	tar czf hello-solar-c.tar.gz $(OUT) manifest.json README.md
+	tar czf hello-solar.tar.gz $(OUT) manifest.json README.md
 
 clean:
-	rm -f $(OUT) hello-solar-c.tar.gz
+	rm -f $(OUT) hello-solar.tar.gz
 
 .PHONY: all clean tarball

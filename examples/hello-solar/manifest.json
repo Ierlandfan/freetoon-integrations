@@ -2,7 +2,7 @@
   "id": "hello-solar",
   "name": "Hello Solar",
   "version": "1.0.0",
-  "binary": "hello-solar.sh",
+  "binary": "hello-solar",
   "args": [],
   "service_id": "solarProduction",
   "tile": {
@@ -14,6 +14,6 @@
     "subtitle_field": "today_kwh",
     "subtitle_unit": "kWh today"
   },
-  "description": "Minimal example integration. Publishes a fake solar reading every 10 s so you have a starting point for your own.",
+  "description": "Minimal integration template — cross-compiled ARMv7 binary that publishes a fake solar reading every 10 s. Copy this folder and adapt the data source for your own integration.",
   "license": "MIT"
 }

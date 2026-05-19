@@ -2,6 +2,21 @@
   "catalog_version": 1,
   "integrations": [
     {
+      "id": "hello-solar-c",
+      "name": "Hello Solar (C)",
+      "description": "ARMv7 binary integration template. Same demo as hello-solar.sh but as a single pre-built binary with no shell / nc / curl dependency. Recommended starting point for new integrations.",
+      "author": "freetoon team",
+      "version": "1.0.0",
+      "url": "https://github.com/Ierlandfan/freetoon-integrations/raw/main/examples/hello-solar-c/hello-solar-c.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/Ierlandfan/freetoon-integrations/main/examples/hello-solar-c/manifest.json",
+      "tile": {
+        "title": "Solar",
+        "color": "0xffcc44",
+        "icon": "sun",
+        "service": "solarProduction"
+      }
+    },
+    {
       "id": "hello-solar",
       "name": "Hello Solar (example)",
       "description": "Minimal example that publishes a fake solar-production value every 10 s. Use as a starting point for your own integration.",

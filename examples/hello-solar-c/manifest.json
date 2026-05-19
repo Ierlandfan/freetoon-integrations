@@ -1,0 +1,19 @@
+{
+  "id": "hello-solar-c",
+  "name": "Hello Solar (C)",
+  "version": "1.0.0",
+  "binary": "hello-solar",
+  "args": [],
+  "service_id": "solarProduction",
+  "tile": {
+    "title": "Solar",
+    "color": "0xffcc44",
+    "icon": "sun",
+    "value_field": "power_w",
+    "value_unit": "W",
+    "subtitle_field": "today_kwh",
+    "subtitle_unit": "kWh today"
+  },
+  "description": "Same demo as hello-solar but as a cross-compiled ARMv7 binary. No shell / nc dependency. Recommended as the starting template for new integrations.",
+  "license": "MIT"
+}

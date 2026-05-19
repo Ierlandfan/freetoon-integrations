@@ -1,0 +1,21 @@
+{
+  "id": "openweather",
+  "name": "OpenWeather",
+  "version": "1.0.0",
+  "binary": "openweather.sh",
+  "args": [],
+  "service_id": "openWeather",
+  "config_file": "openweather.conf",
+  "config_template": "# API key from https://openweathermap.org (free tier ok)\n# Format: API_KEY=...\n# Format: CITY=Amsterdam,NL\nAPI_KEY=PUT_YOUR_KEY_HERE\nCITY=Amsterdam,NL\n",
+  "tile": {
+    "title": "Weather",
+    "color": "0x66bbdd",
+    "icon": "cloud",
+    "value_field": "temp_c",
+    "value_unit": "C",
+    "subtitle_field": "description",
+    "subtitle_unit": ""
+  },
+  "description": "Polls openweathermap.org every 10 minutes; publishes current temp + humidity + short description. Demonstrates an API-driven integration with a config file containing the API key.",
+  "license": "MIT"
+}

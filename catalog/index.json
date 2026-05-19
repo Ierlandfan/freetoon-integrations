@@ -1,0 +1,35 @@
+{
+  "catalog_version": 1,
+  "integrations": [
+    {
+      "id": "hello-solar",
+      "name": "Hello Solar (example)",
+      "description": "Minimal example that publishes a fake solar-production value every 10 s. Use as a starting point for your own integration.",
+      "author": "freetoon team",
+      "version": "1.0.0",
+      "url": "https://github.com/Ierlandfan/freetoon-integrations/raw/main/examples/hello-solar/hello-solar.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/Ierlandfan/freetoon-integrations/main/examples/hello-solar/manifest.json",
+      "tile": {
+        "title": "Solar",
+        "color": "0xffcc44",
+        "icon": "sun",
+        "service": "solarProduction"
+      }
+    },
+    {
+      "id": "openweather",
+      "name": "OpenWeather (example)",
+      "description": "Polls openweathermap.org and publishes current temp + humidity. Demonstrates an API-driven integration with a config file.",
+      "author": "freetoon team",
+      "version": "1.0.0",
+      "url": "https://github.com/Ierlandfan/freetoon-integrations/raw/main/examples/openweather/openweather.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/Ierlandfan/freetoon-integrations/main/examples/openweather/manifest.json",
+      "tile": {
+        "title": "Weather",
+        "color": "0x66bbdd",
+        "icon": "cloud",
+        "service": "openWeather"
+      }
+    }
+  ]
+}

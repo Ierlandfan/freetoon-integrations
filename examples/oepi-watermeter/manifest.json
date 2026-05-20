@@ -1,0 +1,20 @@
+{
+  "id": "oepi-watermeter",
+  "name": "Water meter (oepi-loepi)",
+  "version": "1.0.0",
+  "binary": "oepi-watermeter",
+  "args": [],
+  "service_id": "oepiWater",
+  "config_file": "oepi-watermeter.conf",
+  "tile": {
+    "title": "Water",
+    "color": "0x44aaff",
+    "icon": "drop",
+    "value_field": "m3",
+    "value_unit": "m3",
+    "subtitle_field": "flow",
+    "subtitle_unit": "L/min"
+  },
+  "description": "Reads the @oepi-loepi ESP/Wemos water meter (http://<ESP_IP>/water.html, 1 pulse = 1 liter) and publishes cumulative m3 + live L/min flow on BoxTalk. Set the ESP's LAN IP in oepi-watermeter.conf. Bind it to the Water home tile.",
+  "license": "MIT"
+}

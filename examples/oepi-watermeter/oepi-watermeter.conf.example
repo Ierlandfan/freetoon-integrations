@@ -1,0 +1,14 @@
+# oepi-loepi water meter integration config.
+#
+# 1. Find the LAN IP of your Wemos D1 (the ESPEasy water sensor).
+#    It also serves a page at  http://<ESP_IP>/water.html
+# 2. Copy this file to:
+#      /mnt/data/integrations/oepi-watermeter/oepi-watermeter.conf
+# 3. Set ESP_IP below.
+# 4. Restart the daemon:  pkill -f oepi-watermeter   (init respawns it)
+#
+# If ESP_IP is left at the placeholder, the daemon idles (does nothing)
+# instead of hammering a non-existent host — so it's safe to install
+# before you've wired up the meter.
+
+ESP_IP=PUT_ESP_IP_HERE

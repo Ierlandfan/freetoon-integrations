@@ -30,6 +30,21 @@
         "icon": "cloud",
         "service": "openWeather"
       }
+    },
+    {
+      "id": "oepi-watermeter",
+      "name": "Water meter (oepi-loepi)",
+      "description": "Reads the @oepi-loepi ESP/Wemos water meter (http://<ESP_IP>/water.html, 1 pulse = 1 liter) and publishes cumulative m3 + live L/min flow on BoxTalk. Set the ESP's LAN IP in oepi-watermeter.conf, then bind it to the Water home tile.",
+      "author": "freetoon team",
+      "version": "1.0.0",
+      "url": "https://github.com/Ierlandfan/freetoon-integrations/raw/main/examples/oepi-watermeter/oepi-watermeter.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/Ierlandfan/freetoon-integrations/main/examples/oepi-watermeter/manifest.json",
+      "tile": {
+        "title": "Water",
+        "color": "0x44aaff",
+        "icon": "drop",
+        "service": "oepiWater"
+      }
     }
   ]
 }

@@ -1,0 +1,22 @@
+# Find-my-device integration config.
+#
+# 1. Copy this file to /mnt/data/integrations/findmy/findmy.conf
+# 2. Fill in your Home Assistant URL + a long-lived access token
+#    (HA → your profile → Long-Lived Access Tokens → Create Token)
+# 3. List the tracker entities you want to follow
+# 4. Restart the daemon:  pkill -f integrations/findmy/findmy
+#
+HA_URL=http://192.168.3.101:8123
+HA_TOKEN=PUT_YOUR_LONG_LIVED_TOKEN_HERE
+#
+# TAG lines — one per tracker. Format:
+#   TAG=<device_tracker.entity>,<label>,<on|off>
+#
+#   entity : a Home Assistant device_tracker.* (AirTag via FindMy/iCloud,
+#            Tile/iTag/SmartTag, a phone, etc.)
+#   label  : short name shown on the tile/alert (e.g. Sleutels)
+#   on|off : raise an Inbox alert when this tracker is NOT home
+#
+# The FIRST tag is the one shown on the home tile (its current place).
+TAG=device_tracker.airtag_keys,Sleutels,on
+TAG=device_tracker.airtag_wallet,Portemonnee,off

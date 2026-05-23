@@ -1,0 +1,21 @@
+{
+  "id": "findmy",
+  "name": "Find my device",
+  "version": "1.0.0",
+  "binary": "findmy",
+  "args": [],
+  "service_id": "findMyTag",
+  "config_file": "findmy.conf",
+  "tile": {
+    "title": "Tracker",
+    "color": "0x9b6cf2",
+    "icon": "drop",
+    "value_field": "loc",
+    "value_unit": "",
+    "subtitle_field": "label",
+    "subtitle_unit": "",
+    "alert_field": "alert"
+  },
+  "description": "Find-my-device tracker. Shows where your trackers are via Home Assistant device_tracker entities — Apple AirTags (FindMy/iCloud HA integration), Tile/iTag/SmartTag, phones, anything HA tracks. The tile shows the primary tracker's current place (Thuis / a zone / Onderweg); each tracker can raise an Inbox alert when it leaves home. Needs HA URL + a long-lived token in findmy.conf.",
+  "license": "MIT"
+}

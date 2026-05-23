@@ -60,6 +60,21 @@
         "icon": "bolt",
         "service": "cryptoTicker"
       }
+    },
+    {
+      "id": "findmy",
+      "name": "Find my device",
+      "description": "Shows where your trackers are via Home Assistant device_tracker entities — Apple AirTags (FindMy/iCloud), Tile/iTag/SmartTag, phones, anything HA tracks. Tile shows the primary tracker's place (Thuis / a zone / Onderweg); each tracker can alert when it leaves home. Needs an HA URL + long-lived token.",
+      "author": "freetoon team",
+      "version": "1.0.0",
+      "url": "https://github.com/Ierlandfan/freetoon-integrations/raw/main/examples/findmy/findmy.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/Ierlandfan/freetoon-integrations/main/examples/findmy/manifest.json",
+      "tile": {
+        "title": "Tracker",
+        "color": "0x9b6cf2",
+        "icon": "drop",
+        "service": "findMyTag"
+      }
     }
   ]
 }

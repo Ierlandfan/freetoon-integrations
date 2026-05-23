@@ -45,6 +45,21 @@
         "icon": "drop",
         "service": "oepiWater"
       }
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto tracker",
+      "description": "Tracks cryptocurrency prices via CoinGecko (free, no API key). Pick which coins to follow; the home tile shows the primary coin's price + 24h change, and each coin can raise an Inbox alert when it crosses a configurable threshold (above/below), toggleable per coin.",
+      "author": "freetoon team",
+      "version": "1.0.0",
+      "url": "https://github.com/Ierlandfan/freetoon-integrations/raw/main/examples/crypto/crypto.tar.gz",
+      "manifest_url": "https://raw.githubusercontent.com/Ierlandfan/freetoon-integrations/main/examples/crypto/manifest.json",
+      "tile": {
+        "title": "Crypto",
+        "color": "0xf7931a",
+        "icon": "bolt",
+        "service": "cryptoTicker"
+      }
     }
   ]
 }

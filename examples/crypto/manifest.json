@@ -1,0 +1,21 @@
+{
+  "id": "crypto",
+  "name": "Crypto tracker",
+  "version": "1.0.0",
+  "binary": "crypto",
+  "args": [],
+  "service_id": "cryptoTicker",
+  "config_file": "crypto.conf",
+  "tile": {
+    "title": "Crypto",
+    "color": "0xf7931a",
+    "icon": "bolt",
+    "value_field": "price",
+    "value_unit": "",
+    "subtitle_field": "sub",
+    "subtitle_unit": "",
+    "alert_field": "alert"
+  },
+  "description": "Tracks cryptocurrency prices via CoinGecko (free API). Pick which coins to follow in crypto.conf; the home tile shows the primary coin's price + 24h change, and each coin can raise an Inbox alert when it crosses a configurable threshold (above/below), toggleable per coin. C binary that shells out to curl — no API key needed.",
+  "license": "MIT"
+}

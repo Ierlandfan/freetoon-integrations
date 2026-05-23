@@ -1,0 +1,25 @@
+# Crypto tracker config.
+#
+# 1. Copy this file to /mnt/data/integrations/crypto/crypto.conf
+# 2. Edit the values below
+# 3. Restart the daemon:  pkill -f integrations/crypto/crypto
+#
+# VS — the fiat currency to price in (CoinGecko code): eur, usd, gbp, ...
+VS=eur
+#
+# COIN lines — one per coin you want to track. Format:
+#   COIN=<coingecko-id>,<symbol>,<threshold>,<above|below>,<on|off>
+#
+#   coingecko-id : the id from https://api.coingecko.com/api/v3/coins/list
+#                  (e.g. bitcoin, ethereum, solana, cardano)
+#   symbol       : short label shown on the tile/alert (e.g. BTC)
+#   threshold    : price in the VS currency that triggers the alert
+#   above|below  : alert when price goes ABOVE or BELOW the threshold
+#   on|off       : whether this coin raises an alert at all
+#
+# The FIRST coin is the one shown on the home tile (price + 24h change).
+# Every coin with alert "on" is checked each cycle and surfaces an Inbox/
+# banner notification while it is past its threshold ("Both": tile + alert).
+
+COIN=bitcoin,BTC,50000,below,on
+COIN=ethereum,ETH,4000,above,off

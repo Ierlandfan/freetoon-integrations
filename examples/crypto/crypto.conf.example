@@ -7,6 +7,12 @@
 # VS — the fiat currency to price in (CoinGecko code): eur, usd, gbp, ...
 VS=eur
 #
+# KEY — optional free CoinGecko *demo* API key. Recommended once you track
+# several coins: the keyless free tier rate-limits the per-coin history fetches
+# (the graph data) and you'll get "429 Too Many Requests". Grab one at
+# https://www.coingecko.com/en/developers/dashboard and paste it here.
+#KEY=CG-xxxxxxxxxxxxxxxxxxxxxxxx
+#
 # COIN lines — one per coin you want to track. Format:
 #   COIN=<coingecko-id>,<symbol>,<threshold>,<above|below>,<on|off>
 #

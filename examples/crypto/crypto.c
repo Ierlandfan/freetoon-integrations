@@ -398,11 +398,17 @@ int main(void) {
     signal(SIGTERM, on_sig);
     signal(SIGPIPE, SIG_IGN);
 
-    if (load_config() != 0) { sleep(600); return 1; }
-
     mkdir(CRYPTO_DIR, 0755);
     mkdir(HIST_DIR, 0755);
-    refresh_coins_list();   /* weekly self-throttled; fills coins.tsv for the Settings search */
+    /* Fetch the coin list FIRST, unconditionally — the Settings coin-search
+     * needs coins.tsv even on a fresh install before any coin is configured
+     * (otherwise the picker is empty and you can never choose coins). */
+    refresh_coins_list();
+
+    if (load_config() != 0) {
+        fprintf(stderr, "crypto: no coins configured yet — pick some in Settings -> Crypto\n");
+        sleep(600); return 1;
+    }
 
     static char json[BUF_MAX];
 
